@@ -24,5 +24,6 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v6
         with:
+          context: .
           push: true
-          tags: "egordocker13/my-app:latest"
+          tags: egordocker13/my-app:latest
