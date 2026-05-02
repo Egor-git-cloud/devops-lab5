@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: egordocker13/my-app:latest
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/my-app:latest
